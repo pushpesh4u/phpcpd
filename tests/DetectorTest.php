@@ -18,10 +18,6 @@ if (!defined('TEST_FILES_PATH')) {
 /**
  * Tests for the PHPCPD code analyser.
  *
- * @author    Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright Sebastian Bergmann <sebastian@phpunit.de>
- * @license   http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @link      http://github.com/sebastianbergmann/phpcpd/tree
  * @since     Class available since Release 1.0.0
  */
 class PHPCPD_DetectorTest extends PHPUnit_Framework_TestCase
@@ -239,7 +235,7 @@ class PHPCPD_DetectorTest extends PHPUnit_Framework_TestCase
           ),
           5,
           20,
-          TRUE
+          true
         );
 
         $clones = $clones->getClones();
@@ -261,7 +257,7 @@ class PHPCPD_DetectorTest extends PHPUnit_Framework_TestCase
             ),
             8,
             10,
-            TRUE
+            true
         );
         $clones = $clones->getClones();
         $this->assertCount(0, $clones);
@@ -273,7 +269,7 @@ class PHPCPD_DetectorTest extends PHPUnit_Framework_TestCase
             ),
             7,
             10,
-            TRUE
+            true
         );
         $clones = $clones->getClones();
         $this->assertCount(1, $clones);
